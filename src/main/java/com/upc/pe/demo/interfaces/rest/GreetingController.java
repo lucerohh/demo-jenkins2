@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/v1/greetings")
 public class GreetingController {
 
-    @GetMapping("{name}")
+    @GetMapping("/name/{name}")
     public String greeting(@PathVariable String name) {
         return "Hello " + name + "!";
     }
