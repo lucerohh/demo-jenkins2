@@ -28,4 +28,9 @@ public class GreetingController {
     public String greeting4(@PathVariable String country) {
         return "Hello " + country + "!";
     }
+
+    @GetMapping("{age}")
+    public String greeting5(@PathVariable String age) {
+        return "Hello " + age + "!";
+    }
 }
