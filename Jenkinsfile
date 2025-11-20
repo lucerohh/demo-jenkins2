@@ -65,7 +65,7 @@ pipeline {
         stage('Deploy (info)') {
             steps {
                 echo "La aplicación debería estar corriendo ahora. Abre en tu navegador:"
-                echo "http://<HOST>:${env.APP_PORT}/api/v1/greetings/name/Elizabeth"
+                echo "http://localhost:${env.APP_PORT}/api/v1/greetings/name/Elizabeth"
                 echo "(sustituye <HOST> por localhost si Jenkins está expuesto en tu máquina)"
             }
         }
